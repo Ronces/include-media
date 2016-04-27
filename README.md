@@ -1,6 +1,6 @@
 # Include-media
 
-include-media is an amazing tool for xbian. When you add a new file to a library, include-media reloads it automatically.
+include-media is an amazing tool for xbian. When you add a new file to a library, include-media updates it automatically.
 
 * [Set it up](#set-it-up)
 * [How to use it](#how-to-use-it)
