@@ -3,14 +3,14 @@
 option=$1
 file=$2
 
-if [ "$option" = "-f ]; then
+if [ "$option" = "-f" ]; then
   path="Film"
 else
   path="Series"
 fi
 
 echo "moving " $file " to " $path
-#mv $file $path
+# mv $file $path
 echo "reloading video library"
 
 
