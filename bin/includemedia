@@ -1,0 +1,18 @@
+#!/bin/bash
+
+number_of_args=$#
+option=$1
+
+echo "nombre d'aruments : " $number_of_args
+
+if [ "$option" = "-m" ]; then
+  echo "music"
+elif [ "$option" = "-f" ]; then
+  echo "film"
+elif [ "$option" = "-t" ]; then
+  echo "tv-show"
+else
+  echo "error"
+fi
+
+exit 0
