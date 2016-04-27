@@ -8,9 +8,9 @@ include-media is an amazing tools for xbian. When you add a new file to a librar
 ## Set it up
 
 * [Download include-media](https://github.com/Ronces/includemedia/archive/master.zip)
-* Edit etc/include-media with your own stuff 'nano etc/include-media.cfg'
-* Make install.sh an executable file 'chmod +x install.sh'
-* Run install.sh (you may have to reload your favorite shell after that) './install.sh'
+* Edit etc/include-media with your own stuff `nano etc/include-media.cfg`
+* Make install.sh an executable file `chmod +x install.sh`
+* Run install.sh (you may have to reload your favorite shell after that) `./install.sh`
 * Enjoy <3
 
 
@@ -21,7 +21,7 @@ includemedia OPTION FILE
 ```
 
 #### options
-* ' -m' (music) : FILE will be add to your music library
-* ' -f' (film) : FILE will be add to your film library
-* ' -t' (tv-show) : FILE will be add to your tv-show library
+* ` -m` (music) : FILE will be add to your music library
+* ` -f` (film) : FILE will be add to your film library
+* ` -t` (tv-show) : FILE will be add to your tv-show library
 
