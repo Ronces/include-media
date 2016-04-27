@@ -18,10 +18,16 @@ includemedia OPTION FILE
 ```
 
 #### options
+```
 * -m : musique
+```
     FILE will be add to your music library
+```
 * -f : film
+```
     FILE will be add to your film library
+```
 * -t : tv-show
+```
     FILE will be add to your tv-show library
 
