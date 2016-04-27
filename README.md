@@ -17,7 +17,7 @@ include-media is an amazing tool for xbian. When you add a new file to a library
 ## How to use it
 
 ```
-includemedia OPTION FILE
+include-media OPTION FILE
 ```
 
 ### options
