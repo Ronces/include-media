@@ -9,23 +9,26 @@ file=$2
 error=false
 error_message=""
 
+help_display="                          \n
+    Synopsis : include-media OPTION FILE \n
+                                        \n
+    OPTIONS                             \n
+    -m musique                          \n 
+    -f film                             \n
+    -t tv-show                          \n
+    -h help                             \n
 
-if [ "$number_of_args" = 2 ]; then  
+    "
+if [ "$number_of_args" = 1 -a "$option" = "-h" ]; then
+  echo -e $help_display
+elif [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
     $APP_PATH/lib/include_music $file
   elif [ "$option" = "-f" -o "$option" = "-t" ]; then
     $APP_PATH/lib/include_video $option $file
   elif [ "$option" = "-h" ]; then
-    echo "
-    Synopsis : includemedia OPTION FILE
-
-    OPTIONS
-    -m musique
-    -f film
-    -t tv-show
-    -h help
-    "
+    echo -e $help_display
   else
     error=true
     error_message="Invalide option."
