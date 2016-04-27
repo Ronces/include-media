@@ -2,25 +2,40 @@
 
 number_of_args=$#
 option=$1
+error=false
+error_message=""
 
-if [ "$option" = "-m" ]; then
-  echo "music"
-elif [ "$option" = "-f" ]; then
-  echo "film"
-elif [ "$option" = "-t" ]; then
-  echo "tv-show"
-elif [ "$option" = "-h" ]; then
-  echo "
-  Synopsis : includemedia OPTION FILE
 
-  OPTIONS
-  -m musique
-  -f film
-  -t tv-show
-  -h help
-  "
+if [ "$number_of_args" = 2 ]; then  
+
+  if [ "$option" = "-m" ]; then
+    echo "music"
+  elif [ "$option" = "-f" ]; then
+    echo "film"
+  elif [ "$option" = "-t" ]; then
+    echo "tv-show"
+  elif [ "$option" = "-h" ]; then
+    echo "
+    Synopsis : includemedia OPTION FILE
+
+    OPTIONS
+    -m musique
+    -f film
+    -t tv-show
+    -h help
+    "
+  else
+    error=true
+    error_message="Invalide option."
+  fi
+
 else
-  echo "Error : bad option. See includemedia -h for help"
+  error=true
+  error_message="Wrong number of arguments."  
+fi
+
+if $error; then 
+  echo "Error : " $error_message " See includemedia -h for help."
 fi
 
 exit 0
