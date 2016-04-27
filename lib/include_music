@@ -1,0 +1,10 @@
+:#!/bin/bash
+
+file=$1
+
+echo "moving " $file " to " $path
+#mv $file $path
+echo "reloading music library"
+
+
+

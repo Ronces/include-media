@@ -2,6 +2,8 @@
 
 number_of_args=$#
 option=$1
+file=$2
+
 error=false
 error_message=""
 
@@ -9,11 +11,11 @@ error_message=""
 if [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
-    echo "music"
+    ../lib/include_music $file
   elif [ "$option" = "-f" ]; then
-    echo "film"
+    ../lib/include_video $option $file
   elif [ "$option" = "-t" ]; then
-    echo "tv-show"
+    ../lib/include_video $option $file
   elif [ "$option" = "-h" ]; then
     echo "
     Synopsis : includemedia OPTION FILE
