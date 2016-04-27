@@ -17,11 +17,11 @@ include-media is an amazing tools for xbian. When you add a new file to a librar
 includemedia OPTION FILE
 ```
 
-### options
-  -m : musique
+#### options
+* -m : musique
     FILE will be add to your music library
-  -f : film
+* -f : film
     FILE will be add to your film library
-  -t : tv-show
+* -t : tv-show
     FILE will be add to your tv-show library
 
