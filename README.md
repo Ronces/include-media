@@ -1,22 +1,27 @@
-Includemedia
-============
+# Includemedia
 
-Projet de script pour xbian
+Include Media is an amazing tools for xbian. When you add a new file to a library, Include Media reloads it automatically.
 
-Principe
-========
+* [Set it up](#set-it-up)
+* [How to use it](#how-to-use-it)
 
-Pouvoir automatiquement mettre la bibliothèque à jour après ajout d'un fichier dans les repertoire medias
+## Set it up
 
-Synopsis
-========
+* Download Include Media
+* Make bin/includemedia an executable file
+* You're ready !
 
-includemedia option nom_du_fichier
+## How to use it
 
-options
+```
+includemedia OPTION FILE
+```
+
+### options
   -m : musique
-    Inclue le fichier dans le repertoire Musique du mediacenter
+    FILE will be add to your music library
   -f : film
-    Inclue le fichier dans le repertoire Films du mediacenter
+    FILE will be add to your film library
   -t : tv-show
-    Inclue le fichier dans le repertoire Series du mediacenter
+    FILE will be add to your tv-show library
+
