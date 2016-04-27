@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$HOME/Info/dev/include-media/etc/include-media.cfg
+. $HOME/Info/dev/include-media/etc/include-media.cfg
 
 number_of_args=$#
 option=$1
@@ -13,11 +13,11 @@ error_message=""
 if [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
-    $APP_PATH/../lib/include_music $file
+    $APP_PATH/lib/include_music $file
   elif [ "$option" = "-f" ]; then
-    $APP_PATH/../lib/include_video $option $file
+    $APP_PATH/lib/include_video $option $file
   elif [ "$option" = "-t" ]; then
-    $APP_PATH/../lib/include_video $option $file
+    $APP_PATH/lib/include_video $option $file
   elif [ "$option" = "-h" ]; then
     echo "
     Synopsis : includemedia OPTION FILE
