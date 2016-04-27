@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./$HOME/dev/etc/include-media.cfg
+$HOME/dev/etc/include-media.cfg
 
 number_of_args=$#
 option=$1
