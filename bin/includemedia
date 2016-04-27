@@ -3,16 +3,24 @@
 number_of_args=$#
 option=$1
 
-echo "nombre d'aruments : " $number_of_args
-
 if [ "$option" = "-m" ]; then
   echo "music"
 elif [ "$option" = "-f" ]; then
   echo "film"
 elif [ "$option" = "-t" ]; then
   echo "tv-show"
+elif [ "$option" = "-h" ]; then
+  echo "
+  Synopsis : includemedia OPTION FILE
+
+  OPTIONS
+  -m musique
+  -f film
+  -t tv-show
+  -h help
+  "
 else
-  echo "error"
+  echo "Error : bad option. See includemedia -h for help"
 fi
 
 exit 0
