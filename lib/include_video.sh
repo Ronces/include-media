@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $HOME/Info/dev/include-media/etc/include-media.cfg
+. $HOME/include-media/etc/include-media.cfg
 
 option=$1
 file=$2
