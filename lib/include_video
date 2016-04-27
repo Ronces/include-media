@@ -4,9 +4,9 @@ option=$1
 file=$2
 
 if [ "$option" = "-f" ]; then
-  path="Film"
+  path=$FILMS_PATH
 else
-  path="Series"
+  path=$TV-SHOWS_PATH
 fi
 
 echo "moving " $file " to " $path
