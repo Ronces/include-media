@@ -6,8 +6,8 @@ file=$1
 path=$MUSIC_PATH
 
 echo "moving " $file " to " $path
-# mv $file $path
+mv $file $path
 echo "reloading music library"
-
+curl --data-binary '{ "jsonrpc": "2.0", "method": "AudioLibrary.Scan", "id": "mybash"}' -H 'content-type: application/json;' http://localhost:$HTTP_REMOTE_PORT/jsonrpc
 
 
