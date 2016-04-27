@@ -13,7 +13,7 @@ help_display="                          \n
     Synopsis : include-media OPTION FILE \n
                                         \n
     OPTIONS                             \n
-    -m musique                          \n 
+    -m music                            \n 
     -f film                             \n
     -t tv-show                          \n
     -h help                             \n
