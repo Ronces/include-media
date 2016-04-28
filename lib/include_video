@@ -14,7 +14,5 @@ fi
 
 echo "moving " $file " to " $path
 mv $file $path
-e-binary '{ "jsonrpc": "2.0", "method": "VideoLibrary.Scan", "id": "mybash"}' -H 'content-type: application/json;' http://localhost:$HTTP_REMOTE_PORT/jsonrpc "reloading video library"
-
-
+$APP_PATH/lib/scan_library Video
 

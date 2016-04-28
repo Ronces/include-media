@@ -1,0 +1,14 @@
+#!/bin/bash
+
+. /etc/include-media.cfg
+
+type=$1
+
+
+echo "reloading $type library"
+if [ "$type" = "Audio" ]; then
+  curl --data-binary '{ "jsonrpc": "2.0", "method": "AudioLibrary.Scan", "id": "mybash"}' -H 'content-type: application/json;' http://localhost:$HTTP_REMOTE_PORT/jsonrpc
+else
+  curl --data-binary '{ "jsonrpc": "2.0", "method": "VideoLibrary.Scan", "id": "mybash"}' -H 'content-type: application/json;' http://localhost:$HTTP_REMOTE_PORT/jsonrpc
+fi
+
