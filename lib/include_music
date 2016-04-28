@@ -7,4 +7,4 @@ path=$MUSIC_PATH
 
 echo "moving " $file " to " $path
 mv $file $path
-$APP_PATH/lib/scan_library Audio
+/lib/include-media/scan_library Audio

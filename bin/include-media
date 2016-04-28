@@ -24,9 +24,9 @@ if [ "$number_of_args" = 1 -a "$option" = "-h" ]; then
 elif [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
-    $APP_PATH/lib/include_music $file
+    /lib/include-media/include_music $file
   elif [ "$option" = "-f" -o "$option" = "-t" ]; then
-    $APP_PATH/lib/include_video $option $file
+    /lib/include-media/include_video $option $file
   elif [ "$option" = "-h" ]; then
     echo -e $help_display
   else
