@@ -9,19 +9,19 @@ file=$2
 error=false
 error_message=""
 
-help_display="                          \n
-    Synopsis : include-media OPTION FILE \n
-                                        \n
-    OPTIONS                             \n
-    -m music                            \n 
-    -f film                             \n
-    -t tv-show                          \n
-    -h help                             \n
+help_display="                         
+Synopsis : include-media OPTION FILE 
 
-    "
-    
-    if [ "$number_of_ags" = 1 -a "$option" = "-h" ]; then
-  echo -e $help_display
+OPTIONS                             
+-m music                             
+-f film                             
+-t tv-show                          
+-h help                             
+
+"
+
+if [ "$number_of_ags" = 1 -a "$option" = "-h" ]; then
+  echo -e "$help_display"
 elif [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
