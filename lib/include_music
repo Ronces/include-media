@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $HOME/.include-media/include-media.cfg
+. /etc/include-media.cfg
 
 file=$1
 path=$MUSIC_PATH
