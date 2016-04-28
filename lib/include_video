@@ -12,7 +12,7 @@ else
   path=$TV_SHOWS_PATH
 fi
 
-echo "moving " $file " to " $path
-mv $file $path
+echo "moving " "$file" " to " "$path"
+mv "$file" "$path"
 $APP_PATH/lib/scan_library Video
 

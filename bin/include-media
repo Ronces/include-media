@@ -19,16 +19,17 @@ help_display="                          \n
     -h help                             \n
 
     "
-if [ "$number_of_args" = 1 -a "$option" = "-h" ]; then
+    
+    if [ "$number_of_ags" = 1 -a "$option" = "-h" ]; then
   echo -e $help_display
 elif [ "$number_of_args" = 2 ]; then  
 
   if [ "$option" = "-m" ]; then
-    /lib/include-media/include_music $file
+    /lib/include-media/include_music "$file"
   elif [ "$option" = "-f" -o "$option" = "-t" ]; then
-    /lib/include-media/include_video $option $file
+    /lib/include-media/include_video "$option" "$file"
   elif [ "$option" = "-h" ]; then
-    echo -e $help_display
+    echo -e "$help_display"
   else
     error=true
     error_message="Invalide option."

@@ -5,6 +5,6 @@
 file=$1
 path=$MUSIC_PATH
 
-echo "moving " $file " to " $path
-mv $file $path
+echo "moving " "$file" " to " "$path"
+mv "$file" "$path"
 /lib/include-media/scan_library Audio
