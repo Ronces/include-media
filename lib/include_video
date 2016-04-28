@@ -14,5 +14,5 @@ fi
 
 echo "moving " "$file" " to " "$path"
 mv "$file" "$path"
-/lib/include/media/scan_library Video
+/lib/include-media/scan_library Video
 
