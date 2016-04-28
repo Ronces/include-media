@@ -10,6 +10,16 @@ if [ "$option" = "-f" ]; then
   path=$FILMS_PATH
 else
   path=$TV_SHOWS_PATH
+  echo "Please, enter the name of this tv-show"
+  read show
+  if [ -d "$path/$show"  ]; then
+    echo "This show already exists"
+  else
+    echo "This show doesn't exist yet"
+    echo "Creating directorie..."
+    mkdir "$path"/"$show"
+  fi
+    path=""$path"/"$show""
 fi
 
 echo "moving " "$file" " to " "$path"
