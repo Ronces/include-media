@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /etc/include-media.cfg
+. $HOME/.include-media/include-media.cfg
 
 type=$1
 
