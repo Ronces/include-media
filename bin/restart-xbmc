@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo service xbmc stop
+sudo service xbmc start
