@@ -20,7 +20,7 @@ OPTIONS
 
 "
 
-if [ "$number_of_ags" = 1 -a "$option" = "-h" ]; then
+if [ "$number_of_args" = 1 -a "$option" = "-h" ]; then
   echo -e "$help_display"
 elif [ "$number_of_args" = 2 ]; then  
 
