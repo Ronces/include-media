@@ -41,7 +41,7 @@ else
 fi
 
 if $error; then 
-  echo "Error : " $error_message " See includemedia -h for help."
+  echo "Error : " $error_message " See include-media -h for help."
 fi
 
 exit 0
