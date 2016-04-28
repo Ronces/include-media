@@ -21,7 +21,7 @@ include-media OPTION FILE
 ```
 
 ### options
-* ` -m` (music) : FILE will be add to your music library
-* ` -f` (film) : FILE will be add to your film library
-* ` -t` (tv-show) : FILE will be add to your tv-show library
+* `-m` (music) : FILE will be add to your music library
+* `-f` (film) : FILE will be add to your film library
+* `-t` (tv-show) : FILE will be add to your tv-show library
 
